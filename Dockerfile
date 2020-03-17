@@ -35,7 +35,8 @@ RUN apk add --no-cache \
         bzip2 \
         readline \
 	libgcc \
-	libstdc++
+	libstdc++ \
+	libhistory
 
 COPY --from=builder /work/install .
 COPY --from=builder /work/myhdl-0.11 /myhdl
